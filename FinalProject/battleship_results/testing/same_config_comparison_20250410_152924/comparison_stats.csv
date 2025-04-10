@@ -1,0 +1,3 @@
+Agent,Win Rate,Race Wins,Race Win %,Avg Shots,Min Shots,Max Shots,Std Dev
+SmartAgent,1.0,76,0.76,18.33,7,25,4.485654913164855
+ThomsonSamplingAgent,1.0,24,0.24,21.29,13,25,2.940391130445064

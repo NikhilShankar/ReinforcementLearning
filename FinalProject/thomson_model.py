@@ -31,6 +31,13 @@ class ThomsonSamplingAgent:
         self.alpha = np.ones((self.grid_size, self.grid_size)) * self.alpha_prior
         self.beta = np.ones((self.grid_size, self.grid_size)) * self.beta_prior
 
+        ##IDEA 3 Incorporated to thomson_sampling model
+        # Create a checkerboard/diagonal pattern with slightly higher initial alpha values
+        for r in range(self.grid_size):
+            for c in range(self.grid_size):
+                if (r + c) % 2 == 0:  # Checkerboard pattern
+                    self.alpha[r, c] += 0.5  # Slight advantage
+
     def act(self, observation):
         """
         Select an action based on Thomson Sampling.
@@ -93,9 +100,8 @@ class ThomsonSamplingAgent:
                     # Increase alpha slightly for neighboring cells
                     neighbor_action = self._coord_to_action(nr, nc)
                     if neighbor_action in self.available_actions:
-                        self.alpha[nr, nc] += 10
+                        self.alpha[nr, nc] += 100
         else:  # Miss
-            self.beta[row, col] += 1
             # We could also slightly reduce the probability of adjacent cells
             # on a miss, since ships won't be there if it's isolated
             isolated_miss = True
