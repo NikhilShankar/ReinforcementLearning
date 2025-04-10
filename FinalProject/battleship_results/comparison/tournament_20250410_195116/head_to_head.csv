@@ -1,0 +1,3 @@
+Agent,Opponent,Wins,Total,Win Percentage
+SmartAgent,ThomsonSamplingAgent,49,100,49.0
+ThomsonSamplingAgent,SmartAgent,44,100,44.0
