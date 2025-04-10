@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import os
 import pickle
+
+from FinalProject.thomson_model import ThomsonSamplingAgent
 from battleship_env import BattleshipEnv, create_test_scenario, setup_results_directory
 from random_agent import RandomAgent
 from smart_agent import SmartAgent
@@ -209,6 +211,8 @@ def load_agent_from_file(filepath):
             agent = SmartAgent()
         elif 'QLearningAgent' in agent_name:
             agent = QLearningAgent()
+        elif ('ThomsonSamplingAgent' in agent_name) or ('ThomsonSamplingAgent' in agent_name):
+            agent = ThomsonSamplingAgent()
         else:
             raise ValueError(f"Unknown agent type: {agent_name}")
 
