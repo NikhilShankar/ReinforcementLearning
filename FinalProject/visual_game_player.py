@@ -8,6 +8,7 @@ from tkinter import ttk
 from battleship_env import BattleshipEnv, create_test_scenario
 
 
+
 class VisualGamePlayer:
     """
     A class for visualizing a step-by-step game of Battleship between two agents.

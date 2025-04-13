@@ -6,7 +6,7 @@ import pickle
 from tqdm import tqdm
 from copy import deepcopy
 
-from FinalProject.battleship_env import BattleshipEnv, setup_results_directory
+from battleship_env import BattleshipEnv, setup_results_directory
 
 
 def compare_agents_same_config(agents, test_episodes=50, grid_size=5, ships_config=None):

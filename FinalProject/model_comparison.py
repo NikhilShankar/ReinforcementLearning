@@ -4,7 +4,7 @@ import pandas as pd
 import os
 import pickle
 
-from FinalProject.thomson_model import ThomsonSamplingAgent
+from thomson_model import ThomsonSamplingAgent
 from battleship_env import BattleshipEnv, create_test_scenario, setup_results_directory
 from random_agent import RandomAgent
 from smart_agent import SmartAgent

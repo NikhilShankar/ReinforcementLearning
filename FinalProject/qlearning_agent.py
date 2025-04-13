@@ -15,7 +15,7 @@ class QLearningAgent:
                  exploration_rate=1.0, exploration_decay=0.995, min_exploration_rate=0.01):
         self.grid_size = grid_size
         self.name = "QLearningAgent"
-        self.state_size = 3 ** (grid_size * grid_size)  # 3 possible values for each cell (0, 1, 2)
+        self.state_size = 3 ** (grid_size * grid_size)   # 3 possible values for each cell (0, 1, 2)
         self.action_size = grid_size * grid_size
 
         # Q-learning hyperparameters

@@ -1,0 +1,3 @@
+Agent,Avg Shots,Min Shots,Max Shots,Median Shots,Std Dev
+SmartAgent,15.391,5,25,15.0,4.260999765313301
+ThomsonSamplingAgent,15.694,6,25,16.0,3.209106417680785

@@ -1,0 +1,5 @@
+filename,player_name,algorithm_used,description
+smart_agent.pkl,Captain Smart,Smart Agent,A battleship agent using smart targeting algorithms which randomly shoots in the beginning and once it gets a hit starts shooting at cells which are adjacent.
+thompson_sampling_agent.pkl,Captain Thompson,Thomson Sampling,An agent using probability-based targeting using Thompson Sampling RL technique. It uses a slightly higher score for alpha distribution for alternate diagonals at the start and on receiving a hit it assigns higher score for alpha to adjacent cells and on miss slightly increases beta distribution as well.
+qlearning_agent.pkl, Admiral Q, QLearning, Uses a QLearning RL technique which is trained for around 1 lakh episodes with a dictionary maintaining the QTable and 25 different action states denoting shoots at each of the 25 cells.
+random_agent.pkl, Random Sailor, No Algorithm, No algorithm in particular instead relies on randomly choosing a cell and shooting in every turn.

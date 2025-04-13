@@ -1,0 +1,11 @@
+player1_filename,player2_filename,winner,player1_moves,player2_moves,date
+smart_agent.pkl,thompson_sampling_agent.pkl,smart_agent.pkl,11,18,2025-04-13 13:15:02
+smart_agent.pkl,thompson_sampling_agent.pkl,thompson_sampling_agent.pkl,18,15,2025-04-13 13:15:39
+qlearning_agent.pkl,random_agent.pkl,qlearning_agent.pkl,19,23,2025-04-13 13:19:14
+thompson_sampling_agent.pkl,smart_agent.pkl,smart_agent.pkl,18,9,2025-04-13 13:19:45
+thompson_sampling_agent.pkl,smart_agent.pkl,thompson_sampling_agent.pkl,10,15,2025-04-13 13:20:04
+smart_agent.pkl,thompson_sampling_agent.pkl,smart_agent.pkl,11,19,2025-04-13 13:23:25
+smart_agent.pkl,thompson_sampling_agent.pkl,smart_agent.pkl,11,13,2025-04-13 13:23:39
+smart_agent.pkl,thompson_sampling_agent.pkl,smart_agent.pkl,8,16,2025-04-13 13:24:04
+smart_agent.pkl,thompson_sampling_agent.pkl,thompson_sampling_agent.pkl,24,14,2025-04-13 13:24:24
+smart_agent.pkl,thompson_sampling_agent.pkl,smart_agent.pkl,14,20,2025-04-13 13:24:41

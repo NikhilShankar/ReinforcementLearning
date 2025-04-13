@@ -100,7 +100,7 @@ class ThomsonSamplingAgent:
                     # Increase alpha slightly for neighboring cells
                     neighbor_action = self._coord_to_action(nr, nc)
                     if neighbor_action in self.available_actions:
-                        self.alpha[nr, nc] += 100
+                        self.alpha[nr, nc] += 10
         else:  # Miss
             # We could also slightly reduce the probability of adjacent cells
             # on a miss, since ships won't be there if it's isolated
@@ -232,7 +232,7 @@ def train_thomson_sampling_agent(episodes=1000, grid_size=5, ships_config=None,
     }
 
     # Save agent
-    agent_path = os.path.join(results_dir, 'thomson_sampling_agent.pkl')
+    agent_path = os.path.join(results_dir, 'thompson_sampling_agent.pkl')
     agent.save(agent_path)
 
     # Save metrics as CSV
